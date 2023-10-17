@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquito</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="AjustaTelaJogo()">
+
+    <div class="HUD" id="jogo">
+        <div class="vidas"> 
+            <img id="v1" src="imagens/coracao_cheio.png" alt="">
+            <img id="v2" src="imagens/coracao_cheio.png" alt="">
+            <img id="v3" src="imagens/coracao_cheio.png" alt="">
+        </div>
+        <div class="timer">Tempo Restante: <span id="timer"></span></div>
+
+    </div>
+
+    <script>
+        document.getElementById('timer').innerHTML = tempo
+
+        var criaMosquito = setInterval(function(){
+            PosicaoAleatoria()
+        }, tempoCriaMosquito)
+    </script>
+</body>
+</html>

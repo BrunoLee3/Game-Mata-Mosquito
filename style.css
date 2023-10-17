@@ -1,0 +1,39 @@
+html{
+    cursor: url(imagens/mata_mosca.png) 30 30, auto;
+}
+
+body{
+    background: url(imagens/bg.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.mosquito1{
+    height: 50px;
+    width: 50px;
+}
+
+.mosquito2{
+    height: 60px;
+    width: 60px;
+}
+
+.mosquito3{
+    height: 40px;
+    width: 40px;
+}
+
+.ladoA{
+    transform: scaleX(1);
+}
+
+.ladoB{
+    transform: scaleX(-1);
+}
+
+.HUD{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: 20px;
+
+}
